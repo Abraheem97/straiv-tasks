@@ -4,7 +4,7 @@ counts = items.each_with_object(Hash.new(0)) { |name, hash| hash[name] += 1 }
 
 counts = counts.sort_by { |k, v| [-v, k] }.to_h
 
-puts count
+puts counts
 
 # tally() method simpler but requires ruby 2.7+
 

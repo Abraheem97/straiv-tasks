@@ -1,5 +1,4 @@
 require 'nokogiri'
-require 'open-uri'
 require 'ostruct'
 
 # Load the document
