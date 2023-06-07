@@ -1,11 +1,10 @@
+# frozen_string_literal: true
+
 pdf_filename = 'lorem-ipsum.pdf'
 pdf_path = File.join(__dir__, pdf_filename)
 
 output_filename = 'output.pdf'
 output_path = File.join(__dir__, output_filename)
-
-puts "Output path: #{output_path}"
-puts "PDF path: #{pdf_path}"
 
 ghostscript_installed = system('command -v gs > /dev/null 2>&1')
 
@@ -22,5 +21,5 @@ success = system(command)
 if success
   puts "PDF converted to PDF/A-1b format successfully!"
 else
-  puts "Conversion failed. Please check your command and file paths."
+  puts "Conversion failed. Please check file paths."
 end

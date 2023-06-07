@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 namespace :db do
   desc "Remove duplicate users and keep the newest"
   task remove_duplicates: :environment do
